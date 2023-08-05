@@ -5,7 +5,8 @@
 
 ## Objectif du projet
 
-L'objectif principal de ce projet est d'analyser le jeu de données du speed dating pour comprendre les facteurs qui influencent l'attraction entre deux personnes. Nous cherchons à répondre à des questions telles que : Qu'est-ce qui rend une personne attirante pour une autre lors d'un speed dating ? Quel rôle jouent des facteurs tels que l'âge, la race, les intérêts, etc. ?
+Le speed dating est un processus fascinant qui permet aux individus de rencontrer de nombreuses personnes potentielles en peu de temps. Cette analyse vise à comprendre les différents facteurs qui influencent les rencontres réussies et à explorer les dynamiques et les préférences individuelles au sein de l'expérience de speed dating.
+L'équipe marketing d'une application de dating a besoin d'aide pour un nouveau projet. Ils connaissent une diminution du nombre de matchs et essaient de trouver un moyen de comprendre ce qui rend les gens intéressés les uns aux autres.
 
 ## Méthodologie
 
@@ -39,27 +40,28 @@ data = pd.read_csv('chemin_vers_le_fichier/DS_speed_dating.csv', encoding='ISO-8
 
 ## Résultats et conclusions
 
-**1. Statistique Descriptives**
+   - **Principales découvertes:**
 
-Le jeu de données comprend 8 378 observations et 195 variables. Les participants sont à peu près également répartis entre les hommes (49,1 %) et les femmes (50,9 %). Les âges des participants varient de 18 à 58 ans, avec une moyenne d'environ 26 ans. Les participants proviennent de divers domaines d'études, notamment le droit, les mathématiques, les sciences sociales, la médecine, l'ingénierie, l'éducation, les arts et d'autres.
+   Cette analyse a révélé plusieurs insights intéressants sur les facteurs qui influencent les décisions de match lors des événements de speed dating. L'attractivité semble jouer un rôle clé, tandis que l'ambition est moins valorisée. Le domaine d'études a une grande influence sur la décision de match, contrairement à l'appartenance d'un même groupe ethnique. Les participants ont tendance à mal evaluer leur attractivité et leur valeur perçue sur le marché du dating. Enfin, la communication apres un match semble jouer un rôle clé dans l'obtention d'un 2éme rendez vous en dehors de l'évenement.
+   
+   
+   - **Recommandations:** En se basant sur les résultats de notre analyse, nous pouvons formuler les recommandations suivantes :
 
-**2. Analyse Univariée**
+**Attirer un public plus large** : Notre etude a montré qu'il n'y avait aucune influence de l'age, de la difference d'age, voir de la race. Par conséquent, il serait bénéfique de s'adresser à un public plus large afin d'augmenter les chances de matchs. Il faudrait chercher à convertir un maximum de celibataires à utiliser l'application.
 
-J'ai examiné la distribution des évaluations pour chaque attribut. J'ai constaté que l'attractivité est l'attribut qui reçoit généralement les évaluations les plus élevées, tandis que l'ambition reçoit les évaluations les plus basses. Cela suggère que l'attractivité est un attribut très apprécié lors des événements de speed dating, tandis que l'ambition est moins valorisée.
+**Valoriser l'attractivité** : L'attractivité a été une caractéristique clé dans les décisions de match, indépendamment de l'âge et du sexe. On pourrait inclure des fonctionnalités qui mettent en valeur l'attractivité des utilisateurs, comme un bon système de photos de profil ou des filtres, voir des reglages predefinis de l'outil photo de l'application.
 
-**3. Analyse Bivariée**
+**Promouvoir les intérêts communs** : Les intérêts communs ont joué un rôle dans les décisions de match. On pourrait encourager les utilisateurs à partager leurs intérêts et à rechercher des personnes ayant des intérêts similaires. Ajouter une section "Interets" sur le profil qui sera visible aux autres utilisateurs et pourquoi pas l'integrer à l'algorithme de selection des profils.
 
-J'ai analysé la corrélation entre chaque attribut et la décision de match. J'ai constaté que l'attractivité a la plus grande corrélation positive avec la décision de match, ce qui suggère qu'elle joue un rôle important dans la décision de choisir un partenaire potentiel. J'ai également constaté que les intérêts communs ont une plus grande influence sur la décision de match que l'appartenance au même groupe ethnique.
+**Encourager la communication après le match** : Les participants qui ont communiqué après l'événement ont eu plus de chances d'obtenir un deuxième rendez-vous. L'application pourrait encourager les utilisateurs à continuer à communiquer après un match, par exemple en fournissant des suggestions de conversation ou en offrant des récompenses pour l'engagement.
 
-**4. Analyse Multivariée**
-
-J'ai examiné comment plusieurs variables interagissent entre elles et influencent la décision de match. J'ai constaté que les participants ont tendance à surestimer leur attractivité et leur valeur sur le marché du dating. De plus, J'ai constaté que le taux de match est légèrement plus élevé pour les participants qui étaient les premiers rendez-vous dans une session de speed dating, comparativement à ceux qui étaient les derniers.
+**Offrir des conseils personnalisés** : Les scores de perception déclarées des participants étaient souvent différentes de leurs valeurs perçues. L'application pourrait offrir des conseils personnalisés aux utilisateurs sur la manière d'améliorer leurs chances de match, par exemple en leur montrant comment leurs préférences se comparent à celles des autres.
 
 **6. Conclusion**
 
-Cette analyse a révélé plusieurs insights intéressants sur les facteurs qui influencent les décisions de match lors des événements de speed dating. L'attractivité semble jouer un rôle clé, tandis que l'ambition est moins valorisée. Les intérêts communs ont une plus grande influence sur la décision de match que l'appartenance au même groupe ethnique. Les participants ont tendance à surestimer leur attractivité et leur valeur sur le marché du dating. Enfin, les premières impressions semblent jouer un rôle important, avec un taux de match légèrement plus élevé pour les premiers rendez-vous dans une session de speed dating.
-
-Ces résultats fournissent des insights précieux sur les préférences et les comportements de dating des participants à ces événements de speed dating. Cependant, il est important de noter que ces résultats sont spécifiques à ce jeu de données et peuvent ne pas être généralisables à d'autres contextes ou populations.
+nous avons pu explorer pas mal de pistes et trouver quelques insights interessants pour repondre aux problematiques de notre equipe Marketing, afin qu'ils puissent augmenter le nombre de matchs de leurs utilisateurs et ainsi les engager plus fidelement et sur le long terme.
+Ces résultats fournissent des insights précieux sur les préférences et les comportements de dating des participants à ces événements de speed dating. Cependant, il est important de noter que ces résultats sont spécifiques à ce jeu de données et ne peuvent pas être généralisables à d'autres contextes ou populations.
+On pourrait conduire d'autres analyses plus poussées en utilisant les variables non utilisées lors de cette etude pour decouvrir de nouveaux insights.
 
 ## Licence et citation
 
