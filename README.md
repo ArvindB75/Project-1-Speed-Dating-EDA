@@ -57,7 +57,7 @@ data = pd.read_csv('chemin_vers_le_fichier/DS_speed_dating.csv', encoding='ISO-8
 
 **Offrir des conseils personnalisés** : Les scores de perception déclarées des participants étaient souvent différentes de leurs valeurs perçues. L'application pourrait offrir des conseils personnalisés aux utilisateurs sur la manière d'améliorer leurs chances de match, par exemple en leur montrant comment leurs préférences se comparent à celles des autres.
 
-**6. Conclusion**
+**Conclusion**
 
 nous avons pu explorer pas mal de pistes et trouver quelques insights interessants pour repondre aux problematiques de notre equipe Marketing, afin qu'ils puissent augmenter le nombre de matchs de leurs utilisateurs et ainsi les engager plus fidelement et sur le long terme.
 Ces résultats fournissent des insights précieux sur les préférences et les comportements de dating des participants à ces événements de speed dating. Cependant, il est important de noter que ces résultats sont spécifiques à ce jeu de données et ne peuvent pas être généralisables à d'autres contextes ou populations.
