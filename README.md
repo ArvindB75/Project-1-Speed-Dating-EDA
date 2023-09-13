@@ -1,36 +1,36 @@
 
 ---
 
-# Projet d'analyse EDA de Speed Dating
+# Speed Dating EDA (Exploratory Data Analysis) Project
 
-## Objectif du projet
+## Project Objective
 
-Le speed dating est un processus fascinant qui permet aux individus de rencontrer de nombreuses personnes potentielles en peu de temps. Cette analyse vise à comprendre les différents facteurs qui influencent les rencontres réussies et à explorer les dynamiques et les préférences individuelles au sein de l'expérience de speed dating.
-L'équipe marketing d'une application de dating a besoin d'aide pour un nouveau projet. Ils connaissent une diminution du nombre de matchs et essaient de trouver un moyen de comprendre ce qui rend les gens intéressés les uns aux autres.
+Speed dating is a captivating process that allows individuals to meet numerous potential matches in a short span of time. This analysis seeks to grasp the various factors influencing successful matches and to delve into the dynamics and individual preferences within the speed dating experience. The marketing team of a dating app seeks guidance for a new venture. They've observed a decline in match numbers and are endeavoring to discern what draws people to one another.
 
-## Méthodologie
 
-Pour analyser les données, nous utiliserons diverses techniques statistiques. Cela peut inclure l'analyse descriptive, l'analyse de corrélation, etc. Nous utiliserons également des techniques de visualisation pour illustrer nos résultats.
-Le jeu de données a quelques valeurs manquantes. Par exemple, la colonne 'positin1' a 1846 valeurs manquantes, 'undergra' a 3464 valeurs manquantes, 'mn_sat' a 5245 valeurs manquantes, et 'tuition' a 4795 valeurs manquantes. Il est probable que ce jeu de données nécessite un certain prétraitement pour gérer ces valeurs manquantes avant de pouvoir être utilisé pour l'analyse de données ou l'apprentissage automatique. La gestion de ces valeurs manquantes peut inclure des stratégies telles que l'imputation, la suppression des valeurs manquantes, ou l'utilisation d'algorithmes qui peuvent gérer les valeurs manquantes.
+## Methodology
 
-## Instructions d'installation
+To analyze the data, we will employ a range of statistical techniques. This may encompass descriptive analysis, correlation analysis, and the like. We will also leverage visualization techniques to depict our findings.
+The dataset contains some missing values. For instance, the 'positin1' column has 1,846 missing values, 'undergra' has 3,464 missing values, 'mn_sat' has 5,245 missing values, and 'tuition' has 4,795 missing values. It's likely that this dataset demands some preprocessing to handle these missing values before it can be utilized for data analysis or machine learning. Addressing these missing values might involve strategies such as imputation, discarding the missing values, or utilizing algorithms capable of managing missing values.
 
-Le projet est réalisé en utilisant Python et nécessite l'installation des packages suivants :
+## Installation Instructions
+
+The project is executed using Python and requires the installation of the following packages :
 
 - pandas
 - numpy
 - matplotlib
 - seaborn
 
-Ces packages peuvent être installés à l'aide de pip :
+These packages can be installed using pip :
 
 ```
 pip install pandas numpy matplotlib seaborn
 ```
 
-## Comment utiliser le jeu de données
+## How to Use the Dataset
 
-Le jeu de données est un fichier CSV nommé 'DS_speed_dating.csv'. Il peut être chargé en Python en utilisant la bibliothèque pandas :
+The dataset is a CSV file named 'DS_speed_dating.csv'. It can be loaded in Python using the pandas library :
 
 ```python
 import pandas as pd
@@ -38,44 +38,44 @@ import pandas as pd
 data = pd.read_csv('chemin_vers_le_fichier/DS_speed_dating.csv', encoding='ISO-8859-1')
 ```
 
-## Résultats et conclusions
+## Results and Conclusions
 
-   - **Principales découvertes:**
+   - **Key Findings :**
 
-   Cette analyse a révélé plusieurs insights intéressants sur les facteurs qui influencent les décisions de match lors des événements de speed dating. L'attractivité semble jouer un rôle clé, tandis que l'ambition est moins valorisée. Le domaine d'études a une grande influence sur la décision de match, contrairement à l'appartenance d'un même groupe ethnique. Les participants ont tendance à mal evaluer leur attractivité et leur valeur perçue sur le marché du dating. Enfin, la communication apres un match semble jouer un rôle clé dans l'obtention d'un 2éme rendez vous en dehors de l'évenement.
+   This analysis unveiled several intriguing insights about the factors influencing match decisions during speed dating events. Attractiveness seems to play a pivotal role, while ambition is less valued. The field of study greatly influences the match decision, contrary to belonging to the same ethnic group. Participants tend to misjudge their attractiveness and their perceived market value in the dating scene. Lastly, post-match communication appears to play a key role in securing a second date outside of the event.
    
    
-   - **Recommandations:** En se basant sur les résultats de notre analyse, nous pouvons formuler les recommandations suivantes :
+   - **Recommandations** Based on the findings of our analysis, we can put forth the following recommendations :
 
-**Attirer un public plus large** : Notre etude a montré qu'il n'y avait aucune influence de l'age, de la difference d'age, voir de la race. Par conséquent, il serait bénéfique de s'adresser à un public plus large afin d'augmenter les chances de matchs. Il faudrait chercher à convertir un maximum de celibataires à utiliser l'application.
+**Target a Broader Audience** : Our study indicated that age, age difference, and even race had no influence on matching decisions. Hence, it would be beneficial to target a wider demographic to enhance the likelihood of matches. Efforts should be made to attract a greater number of singles to use the app.
 
-**Valoriser l'attractivité** : L'attractivité a été une caractéristique clé dans les décisions de match, indépendamment de l'âge et du sexe. On pourrait inclure des fonctionnalités qui mettent en valeur l'attractivité des utilisateurs, comme un bon système de photos de profil ou des filtres, voir des reglages predefinis de l'outil photo de l'application.
+**Highlight Attractiveness** : Attractiveness emerged as a key characteristic in match decisions, regardless of age or gender. Consider incorporating features that accentuate user attractiveness, such as a robust profile picture system, filters, or even preset camera settings in the app.
 
-**Promouvoir les intérêts communs** : Les intérêts communs ont joué un rôle dans les décisions de match. On pourrait encourager les utilisateurs à partager leurs intérêts et à rechercher des personnes ayant des intérêts similaires. Ajouter une section "Interets" sur le profil qui sera visible aux autres utilisateurs et pourquoi pas l'integrer à l'algorithme de selection des profils.
+**Promote Shared Interests** : Common interests played a role in match decisions. Users could be encouraged to share their hobbies and search for individuals with similar pursuits. A "Interests" section could be added to profiles, which is visible to other users and could even be integrated into the profile matching algorithm.
 
-**Encourager la communication après le match** : Les participants qui ont communiqué après l'événement ont eu plus de chances d'obtenir un deuxième rendez-vous. L'application pourrait encourager les utilisateurs à continuer à communiquer après un match, par exemple en fournissant des suggestions de conversation ou en offrant des récompenses pour l'engagement.
+**Encourage Post-Match Communicationh** : Participants who communicated post-event were more likely to secure a second date. The app could motivate users to continue interactions after a match, perhaps by suggesting conversation starters or offering rewards for consistent engagement.
 
-**Offrir des conseils personnalisés** : Les scores de perception déclarées des participants étaient souvent différentes de leurs valeurs perçues. L'application pourrait offrir des conseils personnalisés aux utilisateurs sur la manière d'améliorer leurs chances de match, par exemple en leur montrant comment leurs préférences se comparent à celles des autres.
+**Provide Tailored Advice** : Participants' self-perceived scores often diverged from their actual perceived values. The app could offer bespoke advice to users on how to bolster their match prospects, such as by illustrating how their preferences compare with those of others.
 
 **Conclusion**
 
-nous avons pu explorer pas mal de pistes et trouver quelques insights interessants pour repondre aux problematiques de notre equipe Marketing, afin qu'ils puissent augmenter le nombre de matchs de leurs utilisateurs et ainsi les engager plus fidelement et sur le long terme.
-Ces résultats fournissent des insights précieux sur les préférences et les comportements de dating des participants à ces événements de speed dating. Cependant, il est important de noter que ces résultats sont spécifiques à ce jeu de données et ne peuvent pas être généralisables à d'autres contextes ou populations.
-On pourrait conduire d'autres analyses plus poussées en utilisant les variables non utilisées lors de cette etude pour decouvrir de nouveaux insights.
+We managed to explore various avenues and unearthed several insights that can be instrumental for our Marketing team. This will enable them to boost the number of user matches, thereby fostering longer-term, loyal engagement.
+These insights offer valuable perspectives on the dating preferences and behaviors of participants at these speed dating events. Nevertheless, it's crucial to underscore that these findings pertain specifically to this dataset and may not universally apply to other contexts or populations.
+Further, in-depth analysis using variables not considered in this study might yield new, intriguing insights.
 
-## Licence et citation
+## License and Citation
 
-Ces données de speed dating ont été recueillies auprès de participants à des événements de speed dating expérimentaux. Les événements ont été organisés par les professeurs de la Columbia Business School, Ray Fisman et Sheena Iyengar, pour leur article "Gender Differences in Mate Selection: Evidence From a Speed Dating Experiment". Le jeu de données est publiquement disponible pour être utilisé dans la recherche et l'enseignement.
-Ce jeu de données est librement disponible pour une utilisation non commerciale sur Kaggle.com.
-Ce jeu de données peut être utilisé à diverses fins dans les domaines des sciences sociales, de la psychologie et de l'apprentissage automatique. Par exemple, il peut être utilisé pour étudier les facteurs qui influencent l'attraction et la prise de décision dans les rencontres, pour examiner les préférences raciales dans les rencontres, ou pour construire des modèles prédictifs pour l'appariement des partenaires. La grande variété de variables dans le jeu de données permet d'explorer de nombreuses questions de recherche et hypothèses possibles.
+The speed dating data was collected from participants of experimental speed dating events. The events were orchestrated by Columbia Business School professors, Ray Fisman and Sheena Iyengar, for their paper "Gender Differences in Mate Selection: Evidence From a Speed Dating Experiment". The dataset is publicly available for use in research and education.
+This dataset is freely accessible for non-commercial use on Kaggle.com.
+The dataset can serve a myriad of purposes in the realms of social sciences, psychology, and machine learning. For instance, it can be employed to study factors influencing attraction and decision-making in dating, to examine racial preferences in dating, or to construct predictive models for partner matching. The vast array of variables within the dataset allows for the exploration of numerous research questions and potential hypotheses.
 
 ## Contributions
 
-Les contributions à ce projet sont les bienvenues. Si vous souhaitez contribuer, veuillez d'abord ouvrir une issue pour discuter de ce que vous souhaitez changer.
+Contributions to this project are warmly welcomed. If you're keen on contributing, please initiate by opening an issue to discuss what you'd like to modify.
 
 ## Contact
 
-Si vous avez des questions ou des commentaires sur ce projet, veuillez me contacter à :
+Should you have any queries or feedback regarding this project, please reach out to me at :
 
 *abajolah@gmail.com*
 
